@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background: #fafafa;
     color: #222;
     line-height: 1.6;
@@ -16,13 +16,13 @@ body {
 .heading {
     background: #4f46e5;
     color: #fff;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
 }
 
 .heading h1 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 /* Visual Intro */
@@ -30,82 +30,76 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 900px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 700px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid #e5e5e5;
 }
 
 .visual_container img {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .visual_container p {
-    font-size: 1.1rem;
-    max-width: 400px;
+    font-size: 1rem;
+    max-width: 300px;
 }
 
-/* Sections */
+/* Sections & Sidebar */
 section,
 .sider {
     background: #fff;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    max-width: 900px;
-    border-radius: 10px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    max-width: 700px;
+    border-radius: 8px;
     border: 1px solid #e5e5e5;
 }
 
 section h2,
 .sider h2 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
     color: #4f46e5;
 }
 
-section p {
-    font-size: 1rem;
-    color: #333;
-}
-
-/* Sidebar */
 .sider ul {
     list-style: none;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .sider li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
     color: #444;
 }
 
 .sider li::before {
     content: "•";
     color: #4f46e5;
-    margin-right: 0.5rem;
+    margin-right: 0.4rem;
 }
 
-/* Cards (education & projects) */
+/* Cards */
 .education-card,
 .project-card {
     background: #fafafa;
-    border-left: 4px solid #4f46e5;
-    padding: 1rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
+    border-left: 3px solid #4f46e5;
+    padding: 0.7rem;
+    border-radius: 5px;
+    margin-bottom: 0.7rem;
 }
 
 .education-card h3,
 .project-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
 }
 
 .education-card strong {
@@ -113,7 +107,7 @@ section p {
 }
 
 .education-card span {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #666;
 }
 
@@ -125,9 +119,9 @@ section p {
 /* Footer */
 .footer {
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+    padding: 0.7rem;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
     background: #4f46e5;
     color: #fff;
 }
@@ -140,38 +134,35 @@ section p {
     }
 }
 
-/* Timetable Styling */
+/* Timetable */
 .timetable {
-    margin: 40px auto;
-    width: 90%;
-    max-width: 900px;
+    margin: 30px auto;
+    width: 95%;
+    max-width: 700px;
     border-collapse: collapse;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     font-family: Arial, sans-serif;
 }
 
 .timetable caption {
-    caption-side: top;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    padding: 12px;
-    background: #2c3e50;
+    padding: 8px;
+    background: #4f46e5;
     color: #fff;
 }
 
 .timetable th,
 .timetable td {
     border: 1px solid #ddd;
-    padding: 12px;
+    padding: 8px;
     text-align: center;
 }
 
 .timetable thead th {
-    background: #34495e;
+    background: #4f46e5;
     color: #fff;
-    font-weight: 600;
 }
 
 .timetable tbody tr:nth-child(even) {
@@ -180,12 +171,11 @@ section p {
 
 .timetable tbody tr:hover {
     background: #eaf4ff;
-    transition: 0.3s ease;
 }
 
 .timetable tfoot td {
-    background: #2ecc71;
+    background: #4f46e5;
     color: white;
     font-weight: bold;
-    padding: 14px;
+    padding: 10px;
 }
