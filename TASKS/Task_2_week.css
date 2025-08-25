@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f8f9fa 60%, #e3e6ea 100%);
+    margin: 32px;
+    color: #222;
+    padding: 0 20px;
+}
+
+.highlight {
+    color: rgb(255, 87, 34);
+    font-weight: bold;
+    background: #fff3e0;
+    padding: 8px 6px;
+    border-radius: 4px;
+    border-left: 4px solid #ffe600;
+}
+
+.innovation {
+    color: hsl(120, 60%, 40%);
+}
+.excellence {
+    color: rgba(52, 152, 219, 0.8);
+}
+
+#about-title {
+    color: rgba(0, 128, 255, 0.9);
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 8px #b3e0ff33;
+}
+
+a[target="_blank"] {
+    color: #e67e22;
+    text-decoration: underline wavy;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #b71c1c;
+    text-decoration: underline solid;
+}
+
+p::first-letter {
+    font-size: 28px;
+    color: #800080;
+    font-weight: bold;
+    float: left;
+    margin-right: 4px;
+    line-height: 1;
+}
+p::first-line {
+    font-weight: bold;
+    color: hsl(340, 80%, 40%);
+}
+
+ul.movies, .movies-list {
+    list-style-type: square;
+    padding-left: 28px;
+    background: #fffbe7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    margin-bottom: 24px;
+}
+
+ul.movies li, .movies-list li {
+    font-size: 19px;
+    margin-bottom: 7px;
+    padding: 3px 0;
+    transition: background 0.2s;
+}
+
+ul.movies li.favorite, .movies-list .favorite {
+    color: gold;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #222a;
+    background: #fffde7;
+    border-radius: 6px;
+    padding-left: 8px;
+    padding: 2px 8px;
+}
+
+ul li:hover, .movies-list li:hover {
+    background: #f0f8ff;
+    cursor: pointer;
+}
+
+ol.cities, .cities-list {
+    list-style-type: decimal;
+    padding-left: 28px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+ol.cities li, .cities-list li {
+    font-size: 18px;
+    margin-bottom: 7px;
+    padding: 3px 0;
+    transition: background 0.2s;
+    color: #2d3436;
+}
+
+ol.cities li:nth-child(1), .cities-list li:nth-child(1) {
+    color: teal;
+    font-style: italic;
+    background: #e0f7fa;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+ol.cities li:nth-child(2), .cities-list li:nth-child(2) {
+    color: darkorange;
+    background: #fff3e0;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+ol.cities li:nth-child(3), .cities-list li:nth-child(3) {
+    color: crimson;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #ffebee;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.cities-list li:nth-child(even) {
+    color: #0984e3;
+}
+.cities-list li:nth-child(odd) {
+    color: #00b894;
+}
