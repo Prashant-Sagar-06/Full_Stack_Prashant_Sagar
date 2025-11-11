@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data call Through js</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #container{
+            border: 2px solid black;
+            width: 350px;
+            height: 400px;
+            border-top-color: red;
+            border-bottom-color: blue;
+            margin: 5px auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3 class="head">Getting data through js</h3>
+    <div id="container">
+        Hello World
+    </div>
+    <script>
+        let name = "GLA University";
+        let add = "Mathura";
+        let age = "21";
+        let text = "Working on Javascript code "
+        
+        let content = `Name: ${name} <br>
+                        Address: ${add} <br>
+                        Age: ${age} <br>
+                        Info: ${text} <br>
+        `;
+        document.getElementById("container").innerHTML = content;
+    </script>
+</body>
+</html>
