@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Call</title>
+    <link rel="icon" href="./images/dish2.avif">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: rgb(55, 121, 115);
+        }
+        #container{
+            border: 5px solid rgb(255, 255, 255);
+            margin-top: 5px;
+            height: 500px;
+            width: 400px;
+            margin-left: 550px;
+        }
+        .btn{
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: rgb(214, 88, 33);
+        }
+        .btn:hover{
+            background-color: rgb(187, 187, 208);
+            color: white;
+        }
+        h2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        #err{
+            color: red;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Data Call through Promise</h2>
+    <div id="container">
+
+    </div>
+    <button class="btn">Fetch Data</button>
+    <div id="err">
+        Error is loading
+    </div>
+    <script>
+        console.log("Promise API Call");
+        let api = "https://dummyjson.com/products/1"
+        let myPromise = new  Promise((resolve , reject)=>{
+            fetch(api)
+            .then((response)=> response.json())
+            .then(info => resolve(info))
+            .catch(error => reject(error));
+        });
+        myPromise
+            .then((key) => {
+            document.getElementById("container").innerHTML = `
+                ${key.id} <br>
+                ${key.title} <br>
+                ${key.description} <br>`;
+            })
+            .catch((error) => {
+            document.getElementById("err").innerHTML = `Error: ${error.message}`;
+            });
+
+    </script>
+</body>
+</html>
