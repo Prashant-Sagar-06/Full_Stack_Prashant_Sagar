@@ -23,7 +23,6 @@ getData('input1.txt')
             let num1 = data.split(" ");
             let num2 = data2.split(" ");
             let combined = [...num1, ...num2];
-            combined = combined.map(Number);
             combined.sort((a,b)=>a-b);
             let output = combined.join(" ");
             const outputLoc = path.join(__dirname, 'Data', 'output.txt');
